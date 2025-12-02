@@ -1,5 +1,5 @@
 
- /*Scrivi un programma che stampi i numeri da 1 a 100,
+/*Scrivi un programma che stampi i numeri da 1 a 100,
 ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
@@ -11,3 +11,31 @@ Consigli del giorno:
 scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare,
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"*/
 
+
+// scrivi un programma che stampi i numeri da 1 a 100
+
+for (let i = 1; i <= 100; i++) {
+    
+
+    // per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz
+
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log('FizzBuzz')
+
+        // ma per i multipli di 3 stampi Fizz invece per i multipli di 5 stampi Buzz
+
+    } else if (i % 3 === 0) {
+        console.log('Fizz')
+    
+    
+     } else if ( i % 5 === 0) {
+        console.log('Buzz')
+
+    // altrimenti stampo i normale
+
+    } else {
+        console.log(i)
+    }
+
+
+}
